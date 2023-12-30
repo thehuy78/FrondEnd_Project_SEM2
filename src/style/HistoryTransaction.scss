@@ -1,0 +1,44 @@
+.sec1_transaction {
+    position: relative;
+    min-height: 20rem;
+}
+.sec1_transaction_contaner {
+    height: fit-content;
+    max-height: 30rem;
+
+    overflow-y: scroll;
+    padding: 1rem;
+    .list_transaction {
+        .transaction_item {
+            // background-color: white;
+            margin: 0.5rem 0;
+            box-shadow: 0 0 0.5rem var(--shadow);
+            border-radius: 0.5rem;
+            padding: 0.5rem 2rem;
+            border: 0.1rem solid var(--second_nhat);
+            .des {
+                font-weight: 600;
+            }
+            .price {
+                display: flex;
+                span {
+                    margin-left: 0.5rem;
+                    font-weight: 700;
+                }
+                .cong {
+                    color: green;
+                }
+                .tru {
+                    color: red;
+                }
+            }
+            .balance {
+                display: flex;
+                span {
+                    margin-left: 0.5rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

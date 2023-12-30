@@ -1,0 +1,207 @@
+.list_history {
+    background-color: var(--primary);
+    padding: 1.5rem 0;
+    max-width: 100%;
+    position: relative;
+    width: fit-content;
+    .box {
+        display: flex !important;
+        height: fit-content;
+        max-height: 34rem;
+        overflow-x: scroll !important;
+
+        &::-webkit-scrollbar {
+            height: 0.5rem;
+        }
+    }
+}
+.list_history_item_box {
+    width: fit-content;
+    max-width: 25rem;
+    min-width: 25rem;
+    padding: 1rem;
+    background-color: var(--primary);
+}
+.list_history_item {
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--shadow);
+    .infor_user_bill {
+        background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+        width: 100%;
+        border-radius: 1rem;
+        padding: 0.5rem 0;
+        margin: 0.3rem 0;
+        box-shadow: 0 0 1rem var(--shadow);
+        p {
+            color: white;
+            font-weight: 700;
+            line-height: 2rem;
+            i {
+                margin: 0 1rem;
+                width: 1rem;
+
+                text-align: center;
+            }
+        }
+    }
+    .name_hospital_history {
+        color: black;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-align: center;
+        background-clip: text;
+        margin: 0.3rem 0 1rem;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+    }
+    .location_history,
+    .time_history {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: var(--primary);
+        border-radius: 1rem;
+        padding: 0.5rem 0;
+        margin: 0.3rem 0;
+        .icon {
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: white;
+            margin: 1rem;
+            i {
+                color: var(--second);
+                font-size: 1.8rem;
+            }
+        }
+        div {
+            p:nth-child(2),
+            p:nth-child(3) {
+                font-weight: 700;
+            }
+        }
+    }
+    .status {
+        text-align: center;
+        font-weight: 700;
+        margin: 0.5rem 0 0;
+        color: var(--orange);
+    }
+}
+/*  BILL*/
+.list_bill {
+    background-color: var(--primary);
+    padding: 1.5rem 0;
+    max-width: 100%;
+    position: relative;
+
+    .box {
+        display: flex !important;
+        // justify-content: flex-end;
+        height: fit-content;
+        max-height: 34rem;
+        overflow-x: scroll !important;
+        &::-webkit-scrollbar {
+            height: 0.5rem;
+        }
+    }
+}
+.list_bill_item_box {
+    width: fit-content;
+    max-width: 25rem;
+    min-width: 25rem;
+    padding: 1rem;
+    background-color: var(--primary);
+}
+.list_bill_item {
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--shadow);
+    .infor_user_bill {
+        background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+        width: 100%;
+        border-radius: 1rem;
+        padding: 0.5rem 0;
+        margin: 0.3rem 0;
+        box-shadow: 0 0 1rem var(--shadow);
+        p {
+            color: white;
+            font-weight: 700;
+            line-height: 2rem;
+            i {
+                margin: 0 1rem;
+                width: 1rem;
+
+                text-align: center;
+            }
+        }
+    }
+    .name_hospital_bill {
+        color: black;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-align: center;
+        background-clip: text;
+        margin: 0.3rem 0 1rem;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+    }
+    .location_bill,
+    .time_bill {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: var(--primary);
+        border-radius: 1rem;
+        padding: 0.5rem 0;
+        margin: 0.3rem 0;
+        .icon {
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: white;
+            margin: 1rem;
+            i {
+                color: var(--second);
+                font-size: 1.8rem;
+            }
+        }
+        div {
+            p:nth-child(2),
+            p:nth-child(3) {
+                font-weight: 700;
+            }
+        }
+    }
+    .status {
+        text-align: center;
+        font-weight: 700;
+        margin: 0.5rem 0 0;
+        color: green;
+    }
+}
+
+// @media screen and (max-width: 568px) {
+//     .list_history {
+//         grid-template-columns: 1fr;
+//     }
+// }
+
+// @media screen and (max-width: 568px) {
+//     .list_history {
+//         grid-template-columns: 1fr;
+//     }
+// }

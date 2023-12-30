@@ -1,0 +1,106 @@
+.notdata {
+    width: 100vw;
+    display: flex;
+    max-width: 100%;
+    justify-content: flex-end;
+}
+.notdata_container {
+    width: 100%;
+
+    max-width: 30rem;
+
+    margin: auto;
+    text-align: center;
+    padding: 3rem 0;
+    .hospital_error {
+        color: var(--orange);
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+    div {
+        width: 50%;
+        margin: 0 25%;
+        img {
+            width: 100%;
+        }
+    }
+    .doctor_error,
+    .specialist_error {
+        color: var(--second);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+
+/*NOTI*/
+.noti{
+    position: fixed;
+   
+    background-color: var(--second);
+    margin-top: 9rem;
+    z-index: 100;
+    right: 0.5rem;
+    border-radius: 0.5rem;
+    animation: 0.3s ease-in-out noti;
+    box-shadow: 0 0 0.5rem var(--shadow);
+   background-image: linear-gradient(to bottom,var(--second_nhat), var(--second));
+    .noti_container{
+        padding:1rem 2rem;
+        p{
+            color: white;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            i{
+                margin-left: 0.5rem;
+                font-size: 1.5rem;
+                animation:0.5s shake infinite;
+            }
+            @keyframes shake {
+                0% {
+                    transform: rotate(15deg);
+                }
+
+                20% {
+                    transform: rotate(-15deg);
+                }
+
+                40% {
+                    transform: rotate(15deg);
+                }
+
+                60% {
+                    transform: rotate(-15deg);
+                }
+
+                80% {
+                    transform: rotate(15deg);
+                }
+
+                100% {
+                    transform: rotate(-15deg);
+                }
+            }
+        }
+    }
+}
+
+@keyframes noti {
+    0%{
+transform: translateX(100%);
+    }
+    100%{
+transform: translateX(0);
+    }
+}
+
+
+.t{
+    font-weight: 700;
+    background-color: rgb(0, 180, 240);
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem rgba(128, 128, 128, 0.202);
+}

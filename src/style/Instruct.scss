@@ -1,0 +1,344 @@
+.sec1_instruct {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 9rem;
+    border-bottom: 0.1rem solid var(--shadow);
+}
+.sec1_instruct_container {
+    margin: auto;
+    width: 100%;
+    max-width: 1180px;
+    .title_sec1_instruct {
+        text-align: center;
+        color: var(--second);
+        font-size: 2.8rem;
+        font-weight: 750;
+    }
+    .discriber_sec1_instruct {
+        text-align: center;
+        margin: 0.5rem 0 2rem 0;
+    }
+}
+.sec2_instruct {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.sec2_instruct_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1.5rem 0;
+    div {
+        display: flex;
+        justify-content: center;
+        .link_instruct {
+            text-decoration: none;
+        }
+        p {
+            background-color: var(--primary);
+            padding: 0.5rem 2rem;
+            font-size: 1.1rem;
+
+            font-weight: 700;
+            width: fit-content;
+            text-align: center;
+            color: var(--second);
+            border-radius: 1rem;
+            cursor: pointer;
+            box-sizing: border-box;
+            border: 0.05rem solid var(--primary);
+        }
+        p:hover {
+            border: 0.05rem solid var(--second);
+        }
+        .topic_choice {
+            color: white;
+            background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+        }
+    }
+}
+/*-----------------------CSS COMPONENT---------------------*/
+.instruct_child_1 {
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: flex-end;
+    padding: 3% 0;
+    display: block;
+}
+.instruct_child_1_component {
+    width: 100%;
+    margin: auto;
+    max-width: 1180px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    .block1 {
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        border-bottom: 0.05rem solid var(--gray);
+
+        div {
+            width: 100%;
+            max-width: 510px;
+            margin: auto;
+            p:nth-child(1) {
+                font-size: 2rem;
+                font-weight: 700;
+                background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            p:nth-child(2) {
+                font-size: 1rem;
+                font-weight: 500;
+                padding: 1rem 0 2rem;
+                color: var(--gray);
+                span {
+                    font-weight: 800;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    .block2 {
+        width: 100%;
+        padding: 2% 10%;
+
+        p {
+            font-weight: 450;
+            line-height: 2rem;
+            i {
+                margin-right: 0.5rem;
+                font-weight: 800;
+                color: var(--second);
+            }
+        }
+        .title {
+            margin: 0.8rem 0;
+            font-weight: 700;
+        }
+    }
+    .block3 {
+        margin: 0 5% 2% 5%;
+        border-top: 0.05rem solid var(--gray);
+        p {
+            line-height: 2rem;
+        }
+        p:nth-child(1) {
+            font-size: 1.3rem;
+            color: var(--second);
+            margin: 1rem 0;
+            font-weight: 650;
+        }
+    }
+}
+.instruct_child_2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary);
+    padding: 3% 0;
+    display: block;
+}
+.instruct_child_2_component {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: white;
+    p {
+        margin: 1rem 0;
+    }
+    .header {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .title {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    img {
+        width: 100%;
+        max-width: 350px;
+    }
+    .box_img1 {
+        display: flex;
+        img {
+            width: 33%;
+        }
+    }
+}
+
+.instruct_child_4 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3% 0;
+    display: block;
+    background-color: var(--primary);
+}
+.instruct_child_4_component {
+    width: 100%;
+    margin: auto;
+    max-width: 1180px;
+
+    padding: 2rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    .box_topic {
+        padding: 0 1rem 0 0;
+        ul {
+            p {
+                background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+                width: 100%;
+                padding: 0.7rem;
+                color: white;
+                font-weight: 700;
+                border-radius: 0.5rem;
+                margin-bottom: 1rem;
+            }
+            li {
+                width: 100%;
+                padding: 0.7rem;
+                color: black;
+                font-weight: 500;
+                border-radius: 0.5rem;
+                margin-bottom: 1rem;
+                cursor: pointer;
+                i {
+                    margin-right: 0.7rem;
+                }
+            }
+            .choice {
+                background-color: white;
+                color: var(--second);
+                border-left: 0.2rem solid var(--second);
+            }
+        }
+    }
+    .list_question {
+        padding-top: 1rem;
+    }
+}
+
+/*--------------QUESTION----------------*/
+.instruct_question {
+    width: 100%;
+    @keyframes hideshow {
+        0% {
+            opacity: 0;
+            transform: translateX(50%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+    .box_question {
+        width: 100%;
+        margin-bottom: 0.8rem;
+        animation: hideshow 1.5s ease-in-out;
+        .question {
+            background-color: white;
+            padding: 0.7rem 1rem 0.7rem 0.7rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                font-weight: 500;
+            }
+            i {
+                font-size: 0.8rem;
+            }
+        }
+        .answer {
+            background-color: white;
+            padding: 0.7rem;
+            border-radius: 0.5rem;
+            display: block;
+
+            animation: answer 0.5s ease-in-out;
+            p {
+                font-size: 0.9rem;
+                line-height: 1.4rem;
+                margin: 0.5rem 0;
+            }
+        }
+        @keyframes answer {
+            0% {
+                transform: translateX(5rem);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+}
+/*-----------ANIMATION------------*/
+.instruct_child_1_component,
+.instruct_child_4_component {
+    animation: truot 0.7s ease-in-out;
+}
+.instruct_child_2_component {
+    animation: truot 0.4s ease-in-out;
+}
+@keyframes truot {
+    0% {
+        transform: translateY(3rem) scale(0.9);
+    }
+    100% {
+        transform: translateY(0rem) scale(1);
+    }
+}
+
+/* ----------------RESPONSIVE -------------------*/
+@media screen and (max-width: 992px) {
+    .instruct_child_4_component {
+        display: grid;
+        grid-template-columns: 1fr;
+        .box_topic {
+            padding-right: 0;
+        }
+    }
+    .sec2_instruct_container {
+        grid-template-columns: repeat(3, 1fr);
+
+        div {
+            margin: 1rem 0;
+            p {
+                width: 80%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .instruct_child_4_component {
+        display: grid;
+        grid-template-columns: 1fr;
+        .box_topic {
+            padding-right: 0;
+        }
+    }
+    .sec2_instruct_container {
+        grid-template-columns: repeat(2, 1fr);
+        div {
+            margin: 1rem 0;
+        }
+    }
+}

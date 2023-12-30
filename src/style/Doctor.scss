@@ -1,0 +1,259 @@
+.sec1_doctor {
+    padding-top: 9rem;
+    background-color: var(--primary);
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.sec1_doctor_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+
+    .back_link {
+        display: flex;
+        align-items: first baseline;
+
+        .link {
+            text-decoration: none;
+            font-weight: 700;
+            color: black;
+        }
+        i {
+            font-size: 0.8rem;
+            margin: 0 0.5rem;
+        }
+        p {
+            background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+            font-weight: 700;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        span {
+            font-weight: 700;
+            color: black;
+        }
+    }
+}
+
+.sec2_doctor {
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: flex-start;
+}
+.sec2_doctor_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas:
+        "l r r r"
+        "l b b b";
+
+    .left {
+        grid-area: l;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        height: fit-content;
+        box-shadow: 0 0 1rem var(--shadow);
+        .title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: 0.8rem;
+            color: white;
+            text-align: center;
+            width: 100%;
+            background-color: var(--second_nhat);
+        }
+        .information {
+            padding: 1rem 1rem 2rem;
+            .info_hospital {
+                display: flex;
+                align-items: baseline;
+                i {
+                    margin-right: 1rem;
+                }
+                div {
+                    .name_hospital {
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                    }
+                    .address_hospital {
+                        font-size: 0.95rem;
+                        color: var(--gray);
+                    }
+                }
+            }
+            .info_specialist {
+                display: flex;
+                align-items: baseline;
+                margin: 0.5rem 0;
+                i {
+                    margin-right: 1rem;
+                }
+                .name_specialist {
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    .right {
+        grid-area: r;
+        background-color: white;
+        margin-left: 1rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 0 1rem var(--shadow);
+        .title {
+            width: 100%;
+            background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: 0.8rem;
+            color: white;
+        }
+        .right_container {
+            margin: 1rem 2rem;
+            .box_search {
+                margin: 1rem 0;
+
+                height: 2.5rem;
+                background-color: white;
+                border: 0.1rem solid var(--shadow);
+
+                border-radius: 0.5rem;
+                overflow: hidden;
+                input {
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    padding: 0.5rem 2rem;
+                    width: 90%;
+                }
+                i {
+                    width: 10%;
+                    text-align: center;
+                    border-left: 0.05rem solid var(--gray);
+                }
+            }
+            .box_sort {
+                width: 100%;
+                display: flex;
+                div {
+                    width: 40%;
+                    max-width: 10rem;
+                    margin: 1rem 1rem 1rem 0;
+                    select {
+                        width: 100%;
+                        padding: 0.5rem;
+                        color: white;
+                        font-size: 0.9rem;
+                        border-radius: 0.3rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+                        option {
+                            color: black;
+                            border: none;
+                            outline: none;
+                            padding: 0.5rem;
+                            font-size: 1rem;
+                            margin: 1rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .list_doctor {
+                width: 100%;
+                height: 100vh;
+                max-height: 30rem;
+                overflow-y: scroll;
+                scroll-behavior: smooth;
+                position: relative;
+                .link {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                    position: relative;
+                    div {
+                        margin: 1rem 0;
+                        padding: 0.5rem 1rem;
+                        border-radius: 1rem;
+                        box-shadow: 0 0 0.5rem var(--shadow);
+
+                        p {
+                            margin: 0.5rem;
+                            i {
+                                width: 1rem;
+                                text-align: center;
+                                margin-right: 1rem;
+                            }
+                        }
+                        p:nth-child(1) {
+                            color: var(--orange);
+                            font-weight: 700;
+                            font-size: 1.1rem;
+                        }
+                    }
+                    .disabled {
+                        position: absolute;
+                        right: 2rem;
+                        background-color: var(--primary);
+                        padding: 0.2rem 1rem;
+                        height: 100%;
+                        width: 100%;
+                        max-width: 5rem;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--third);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        grid-area: b;
+        margin: 1rem 0 0 1rem;
+        .link {
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            i {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .sec1_doctor {
+        padding: 6rem 1rem 1rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .sec2_doctor_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "r"
+            "l"
+            "b";
+
+        .right {
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+    }
+}

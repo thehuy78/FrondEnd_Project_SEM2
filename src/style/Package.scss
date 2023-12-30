@@ -1,0 +1,320 @@
+.sec1_package {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 9rem;
+    border-bottom: 0.1rem solid var(--shadow);
+}
+.sec1_package_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 2% 0;
+    .back_link_block {
+        display: flex;
+        align-items: first baseline;
+
+        .location_link {
+            font-size: 1rem;
+            color: var(--second);
+            background: linear-gradient(to right, var(--second), var(--second_nhat));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        .back_link {
+            color: black;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        i {
+            margin: 0 0.5rem;
+            font-size: 0.7rem;
+        }
+    }
+    .title_sec1_package {
+        text-align: center;
+        color: var(--second);
+        font-size: 2.8rem;
+        font-weight: 750;
+    }
+    .discriber_sec1_package {
+        text-align: center;
+        margin: 0.5rem 0 2rem 0;
+    }
+    .box_sort {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .box_sort_container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            max-width: 650px;
+
+            padding: 0.5rem;
+            border-radius: 1rem;
+            height: 3rem;
+            box-shadow: 0 0 0.5rem var(--shadow);
+            i {
+                width: 5%;
+                text-align: center;
+                font-size: 1.2rem;
+                color: grey;
+            }
+            input {
+                width: 45%;
+                height: 100%;
+                outline: none;
+                border: none;
+                border-right: 0.1rem solid var(--shadow);
+            }
+            select {
+                width: 45%;
+                height: 100%;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+}
+.sec3_package {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary);
+}
+
+.sec3_package_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    display: grid;
+
+    grid-template-areas:
+        "a a b"
+        "c c c";
+    grid-auto-columns: 1fr 1fr;
+    padding: 2rem 0;
+    .list_hospital {
+        grid-area: a;
+        width: 100%;
+        padding-right: 2rem;
+
+        .hospital_item {
+            display: flex;
+            height: fit-content;
+
+            padding: 1rem 1rem;
+            background-color: white;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 1rem var(--shadow);
+            border: 0.1rem solid white;
+            transition: 0.3s;
+            .logo {
+                width: 12%;
+                margin-right: 3%;
+
+                img {
+                    width: 100%;
+                }
+            }
+            .info {
+                .name {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+                .address {
+                    color: var(--gray);
+                    display: flex;
+                    align-items: center;
+                    margin: 0.5rem 0 1rem 0;
+                    i {
+                        margin-right: 0.5rem;
+                        color: var(--second);
+                    }
+                }
+                .price {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: var(--orange);
+                    margin: 0.5rem 0;
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                    }
+                }
+                .link {
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+
+                    p {
+                        width: fit-content;
+                        padding: 0.6rem 2rem;
+                        border-radius: 2rem;
+                        font-weight: bold;
+                        transition: 0.3s;
+                        background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+                    }
+                    p:hover {
+                        box-shadow: 0 0.2rem 0.2rem rgba(128, 128, 128, 0.376);
+                    }
+                }
+            }
+        }
+
+        .hospital_item:hover {
+            border: 0.1rem solid var(--second);
+        }
+        .hospital_item_choice {
+            border: 0.1rem solid var(--second);
+        }
+    }
+    .information_hospital {
+        grid-area: b;
+        width: 100%;
+        background-color: white;
+        border-radius: 1rem;
+
+        padding: 2rem 1.5rem;
+        height: fit-content;
+        img {
+            width: 50%;
+            margin: 0 25%;
+        }
+        .name_pack {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 1rem 0;
+            background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .box_hospital {
+            display: flex;
+            align-items: first baseline;
+            i {
+                font-size: 1.1rem;
+                color: var(--orange);
+                margin-right: 0.5rem;
+            }
+            .name_hospital {
+                font-size: 1.05rem;
+                font-weight: 600;
+                line-height: 1rem;
+            }
+            .address {
+                font-size: 0.9rem;
+                color: var(--gray);
+                line-height: 1rem;
+            }
+        }
+
+        .discriber {
+            line-height: 1.4rem;
+            padding: 1rem 0;
+            border-top: 0.1rem solid var(--shadow);
+        }
+        div {
+            p {
+                font-weight: 600;
+                font-size: 1.4rem;
+                margin: 1rem 0;
+            }
+            iframe {
+                width: 100%;
+                border-radius: 0.5rem;
+                border: 0.1rem solid white;
+                box-shadow: 0 0 0.5rem var(--shadow);
+            }
+        }
+    }
+    .pagination_controls {
+        display: flex;
+        justify-content: center;
+        grid-area: c;
+        align-items: center;
+        button {
+            padding: 0.2rem 0.2rem;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            outline: none;
+            height: 100%;
+            height: 1.8rem;
+            min-width: 1.8rem;
+            width: fit-content;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0 0 0.2rem var(--shadow);
+            color: var(--second);
+            border-radius: 0.2rem;
+            cursor: pointer;
+        }
+        button:disabled {
+            color: var(--shadow);
+        }
+        .perpage {
+            padding: 0.2rem 0.5rem;
+            margin: 0 0.2rem;
+            font-size: 1rem;
+            height: 1.8rem;
+            min-width: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            background-color: white;
+            color: var(--second);
+            box-shadow: 0 0 0.2rem var(--shadow);
+            border-radius: 0.2rem;
+            cursor: pointer;
+        }
+        .perpage_choice {
+            background-color: var(--second);
+            color: white;
+        }
+        .hide {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 1180px) {
+    .sec1_package_container,
+    .sec3_package_container {
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .sec1_package {
+        padding-top: 5rem;
+    }
+    .sec1_package_container,
+    .sec3_package_container {
+        padding: 2%;
+    }
+    .sec3_package_container {
+        display: grid;
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+        grid-template-columns: 1fr !important;
+        .list_hospital {
+            max-width: 100% !important;
+            width: 100% !important;
+            padding-right: 0;
+        }
+        .information_hospital {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,273 @@
+.sec1_service {
+    width: 100%;
+    height: 100vh;
+    max-height: 30rem;
+    background-image: url("../assets/image/service/img1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: flex-end;
+}
+.sec1_service_container {
+    width: 100%;
+    max-width: 1180px;
+    height: 100%;
+    margin: auto;
+    padding-top: 10rem;
+
+    .sec1_service_content {
+        width: 100%;
+        max-width: 40rem;
+        min-height: 40%;
+        height: auto;
+        inset: 0;
+        padding: 2rem;
+        border: 0.2rem solid white;
+        border-radius: 2rem;
+        background-color: rgba(248, 248, 248, 0.83);
+        .title {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        .service {
+            font-size: 2.8rem;
+            font-weight: 650;
+
+            padding: 0.5rem 0 1rem;
+            background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-bottom: 0.1rem solid var(--second);
+        }
+        .describer {
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+    }
+}
+.sec2_service {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary);
+    padding: 2rem;
+}
+.sec2_service_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    .box_sort {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .box_sort_container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            max-width: 900px;
+            background-color: white;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            height: 3rem;
+
+            box-shadow: 0 0 0.5rem var(--shadow);
+
+            i {
+                width: 5%;
+                text-align: center;
+                font-size: 1.2rem;
+                color: grey;
+            }
+            input {
+                width: 45%;
+                height: 100%;
+                outline: none;
+                border: none;
+                border-right: 0.1rem solid var(--shadow);
+            }
+            select {
+                width: 45%;
+                height: 100%;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+    .box_type_hospital {
+        display: flex;
+        padding: 1rem 0;
+        justify-content: center;
+        .type {
+            padding: 0.7rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            color: var(--second);
+            background-color: white;
+            box-shadow: 0 0 1rem var(--shadow);
+            border: 0.05rem solid white;
+            margin: 0 1rem;
+            cursor: pointer;
+        }
+        .type:hover {
+            border: 0.05rem solid var(--second);
+        }
+        .choice {
+            color: white;
+            background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+        }
+    }
+}
+
+.sec3_service {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary);
+}
+.sec3_service_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+
+    .list_hospital {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .hospital_item {
+            display: flex;
+            padding: 1rem 2rem;
+            background-color: white;
+            border-radius: 1rem;
+            margin: 0.5rem;
+            box-shadow: 0 0 1rem var(--shadow);
+            border: 0.1rem solid white;
+            transition: 0.3s;
+            .logo {
+                width: 50%;
+                max-width: 6rem;
+                margin-right: 1.5rem;
+                img {
+                    width: 100%;
+                }
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .box_info {
+                    .name {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+                    .address {
+                        color: var(--gray);
+                        display: flex;
+                        align-items: center;
+                        margin: 1rem 0;
+                        i {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+
+                .link {
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+
+                    p {
+                        width: fit-content;
+                        padding: 0.6rem 2rem;
+                        border-radius: 2rem;
+                        font-weight: bold;
+                        transition: 0.3s;
+                        background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+                    }
+                    p:hover {
+                        box-shadow: 0 0.2rem 0.2rem rgba(128, 128, 128, 0.376);
+                    }
+                }
+            }
+        }
+        .choice {
+            border: 0.1rem solid var(--second);
+        }
+        .hospital_item:hover {
+            border: 0.1rem solid var(--second);
+        }
+    }
+    .pagination_controls {
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+        margin: 2rem 0 3rem 0;
+        button {
+            padding: 0.2rem 0.2rem;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            outline: none;
+            height: 100%;
+            height: 1.8rem;
+            min-width: 1.8rem;
+            width: fit-content;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0 0 0.2rem var(--shadow);
+            color: var(--second);
+            border-radius: 0.2rem;
+            cursor: pointer;
+        }
+        button:disabled {
+            color: var(--shadow);
+        }
+        .perpage {
+            padding: 0.2rem 0.5rem;
+            margin: 0 0.2rem;
+            font-size: 1rem;
+            height: 1.8rem;
+            min-width: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            background-color: white;
+            color: var(--second);
+            box-shadow: 0 0 0.2rem var(--shadow);
+            border-radius: 0.2rem;
+            cursor: pointer;
+        }
+        .perpage_choice {
+            background-color: var(--second);
+            color: white;
+        }
+        .hide {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .sec1_service_container {
+        padding-top: 5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sec1_service {
+        background-position: right;
+    }
+    .sec3_service_container {
+        .list_hospital {
+            grid-template-columns: 1fr;
+        }
+    }
+}

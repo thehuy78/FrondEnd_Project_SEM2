@@ -1,0 +1,374 @@
+/*------------------------------FORM DATA--------------------------*/
+.error {
+    border: 1px solid red !important;
+    animation: ease-in-out error 1s;
+}
+
+.form_data_booking {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary);
+    padding: 0;
+    padding-top: 9rem;
+}
+
+.form_data_booking_container {
+    width: 100%;
+    max-width: 1023px;
+    margin: auto;
+    padding: 1rem;
+
+    .title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 0 0 1rem 0;
+    }
+
+    .discriber {
+        background-color: rgba(0, 213, 255, 0.14);
+        padding: 1rem;
+        color: var(--third);
+        border-radius: 1rem;
+    }
+
+    .note {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: red;
+        padding: 0.2rem 0;
+    }
+
+    .information_hospital {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 600;
+        padding-bottom: 2rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 0.1rem solid var(--shadow);
+
+        p {
+            width: 46%;
+            font-size: 1.1rem;
+            margin: 0.2rem 2%;
+            display: flex;
+
+            span {
+                font-size: 1.2rem;
+                font-weight: 700;
+                min-width: fit-content;
+                width: max-content;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    form {
+        .form_container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+
+            .box_input {
+                margin: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+
+                label {
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    margin: 0.5rem 0;
+
+                    span {
+                        font-weight: 700;
+                        color: red;
+                        margin-left: 0.3rem;
+                    }
+                    .err {
+                        font-size: 0.8rem !important;
+                    }
+                }
+
+                input,
+                select {
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                    padding: auto;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    height: 2.2rem;
+                    outline: none;
+                    border: 0.1rem solid var(--shadow);
+                    border-radius: 0.3rem;
+                    background-color: white;
+                    color: black;
+                    font-weight: 500;
+                }
+            }
+
+            .box_divided_2 {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .box_divided_3 {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        .box_btn {
+            display: flex;
+            justify-content: right;
+            padding: 1rem;
+
+            .btn_submit {
+                padding: 0.5rem 3rem;
+                outline: none;
+                border: none;
+                color: white;
+                font-weight: 700;
+                border-radius: 0.5rem;
+                box-shadow: 0 0 0.5rem var(--shadow);
+                background-color: var(--second_nhat);
+            }
+
+            .btn_submit:hover {
+                background-color: var(--second);
+            }
+        }
+    }
+}
+
+.formdata_payment {
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: flex-end;
+    padding: 9rem 0 2rem 0;
+}
+
+.formdata_payment_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 5%;
+
+    .left {
+        height: fit-content;
+
+        .infor_user {
+            margin-bottom: 2rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 0 0.5rem var(--shadow);
+
+            .title {
+                width: 100%;
+                text-align: center;
+                color: white;
+                font-weight: 700;
+                font-size: 1.2rem;
+                padding: 0.5rem 0;
+                background-color: var(--second_nhat);
+            }
+
+            .inf {
+                display: flex;
+                align-items: first baseline;
+                font-weight: 500;
+
+                padding: 0.5rem;
+                font-size: 1.1rem;
+
+                i {
+                    color: var(--second);
+                    font-size: 1.1rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            .inf:nth-child(2) {
+                display: flex;
+                align-items: first baseline;
+                font-weight: 700;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .infor_hospital {
+            background-color: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 0 0.5rem var(--shadow);
+
+            .title {
+                width: 100%;
+                text-align: center;
+                color: white;
+                font-weight: 700;
+                font-size: 1.2rem;
+                padding: 0.5rem 0;
+                background-color: var(--second_nhat);
+            }
+
+            .inf {
+                display: flex;
+                align-items: first baseline;
+                font-weight: 700;
+
+                padding: 0.5rem;
+                font-size: 1.1rem;
+
+                i {
+                    color: var(--second);
+                    font-size: 1.1rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            .inf:nth-child(3) {
+                font-weight: 500;
+                color: var(--gray);
+            }
+        }
+    }
+
+    .right {
+        background-color: white;
+        height: fit-content;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 0 0.5rem var(--shadow);
+
+        .title {
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding: 0.5rem 0;
+            background-color: var(--second_nhat);
+        }
+
+        .right_content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .choice_pay {
+                div {
+                    display: flex;
+                    justify-content: center;
+
+                    input {
+                        width: 1rem;
+                    }
+
+                    p {
+                        width: 80%;
+                        background-color: var(--second_nhat);
+                        margin: 0.5rem 1rem;
+                        padding: 0.5rem 0;
+                        text-align: center;
+                        font-weight: 600;
+                        color: white;
+                        border-radius: 0.5rem;
+                        display: flex;
+                        justify-content: space-around;
+
+                        span {
+                            color: var(--orange);
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .balance {
+                    width: 70%;
+                    margin: 0 15%;
+                    height: 2rem;
+                    border: none;
+                    outline: none;
+                    background-color: var(--orange);
+                }
+            }
+
+            .bill_pay {
+                background-color: white;
+                padding: 0 1rem;
+
+                .title_bill {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    text-align: center;
+                    padding: 0.5rem 0;
+                }
+
+                .bill {
+                    border: 0.08rem solid var(--second);
+                    border-radius: 1rem;
+
+                    p {
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                        padding: 0.5rem;
+                        margin: 0.2rem;
+                        border-bottom: 0.05rem solid var(--shadow);
+                        display: flex;
+                        justify-content: space-between;
+
+                        .gia {
+                            color: var(--second);
+                        }
+                    }
+                }
+
+                .choice_pay {
+                    p {
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                        padding: 0.5rem;
+                        margin: 0.2rem;
+                        border-bottom: 0.05rem solid var(--shadow);
+                        display: flex;
+                        justify-content: space-between;
+
+                        .gia {
+                            color: var(--second);
+                        }
+                    }
+                }
+
+                .btn_pay_box {
+                    display: flex;
+                    justify-content: right;
+
+                    border: none !important;
+
+                    .btn_pay {
+                        background-color: var(--second_nhat);
+                        font-weight: 700;
+                        color: white;
+                        margin: 1rem 0;
+                        width: fit-content;
+                        padding: 0.5rem 2rem;
+                        border-radius: 0.5rem;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .btn_pay:disabled {
+                        background-color: var(--shadow);
+                    }
+                }
+            }
+        }
+    }
+}

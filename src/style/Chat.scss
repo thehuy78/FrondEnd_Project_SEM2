@@ -1,0 +1,336 @@
+//chat user
+
+.chatbox {
+    width: fit-content;
+
+    position: fixed;
+    float: right;
+    display: flex;
+    z-index: 1;
+    right: 0.5rem;
+    bottom: 0;
+
+    justify-content: flex-end;
+}
+
+.chatbox_container {
+    width: 100%;
+    max-width: 20rem;
+
+    .chat_toggle {
+        padding: 0.2rem 1rem;
+        width: 100%;
+        background-color: var(--second_nhat);
+        cursor: pointer;
+        border-radius: 0.2rem;
+        color: white;
+        display: block;
+
+        p {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        i {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .form_chat_container {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        background-color: white;
+        display: block;
+        border: 0.1rem solid var(--shadow);
+
+        .box_title {
+            padding: 0.2rem 1rem;
+            display: flex;
+            align-items: center;
+            background-color: var(--second_nhat);
+            color: white;
+
+            p {
+                width: 90%;
+                text-align: center;
+                font-weight: 700;
+            }
+
+            i {
+                width: 10%;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+
+        .show_chat {
+            padding: 0.5rem;
+            width: 20rem;
+            height: 100vh;
+            max-height: 20rem;
+            overflow-y: scroll;
+        }
+
+        .chat-sended-user {
+            padding: 5px;
+            background: rgb(61, 160, 221);
+            color: white;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .chat-sended-adminMedCare {
+            text-align: end;
+            padding: 5px;
+            background: rgb(221, 117, 61);
+            color: white;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .form_input_chat {
+            padding: 0.5rem 1rem;
+
+            label {
+                width: 100%;
+                display: block;
+                font-weight: 600;
+            }
+
+            .input_chat {
+                padding: 0.5rem;
+                outline: 0.1rem solid var(--second);
+                border: 0.1rem solid var(--shadow);
+            }
+
+            // div {
+            //     width: 100%;
+            //     height: 3rem;
+            // }
+
+            // textarea {
+            //     width: 100%;
+            //     height: 3rem;
+            //     outline: none;
+
+            //     border: 0.1rem solid var(--shadow);
+            //     padding: 0.2rem 0.5rem;
+            //     border-radius: 0.3rem;
+            //     margin-bottom: 0.2rem;
+            //     box-shadow: 0 0 1rem var(--shadow);
+            // }
+
+            // textarea:focus {
+            //     border: 0.1rem solid var(--second);
+            // }
+
+            // input {
+            //     width: 100%;
+            //     color: var(--second);
+            //     font-weight: 600;
+            //     padding: 0.3rem;
+            //     outline: none;
+            //     border: none;
+            //     border-radius: 0.3rem;
+            //     border: 0.1rem solid var(--second);
+            //     background-color: white;
+            // }
+
+            // input:hover {
+            //     background-color: var(--second);
+            //     color: white;
+            // }
+        }
+    }
+}
+
+///chat admin
+.sec1_admin {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 9rem;
+    background-color: var(--primary);
+}
+.sec1_admin_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    .choice {
+        width: 20%;
+        padding-right: 2rem;
+        p {
+            padding: 0.5rem 2rem;
+            color: var(--second);
+            background-color: white;
+            border: 0.1rem solid var(--second);
+            font-weight: 700;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+.chat_admin {
+    width: 80%;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.5rem var(--shadow);
+    padding: 1rem;
+    margin-bottom: 3rem;
+    .render {
+        margin: 1rem 0;
+        width: 100%;
+        display: flex;
+
+        .inbox_user {
+            cursor: pointer;
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        .left {
+            width: 20%;
+
+            .title {
+                background-color: var(--second);
+                color: white;
+                padding: 0.3rem;
+                font-size: 1.3rem;
+                text-align: center;
+                font-weight: 700;
+                border-radius: 1rem;
+            }
+
+            .inbox_user {
+                background-color: var(--primary);
+                color: var(--second);
+                font-weight: 600;
+                border: 0.1rem solid var(--second);
+                width: 100%;
+                margin: 0.5rem 0;
+                border-radius: 1rem;
+                text-align: center;
+            }
+            .inbox_user_choice {
+                background-color: var(--second) !important;
+                color: white;
+            }
+        }
+
+        .right {
+            width: 80%;
+            border: 0.1rem solid white;
+            box-shadow: 0 0 0.5rem var(--shadow);
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-left: 1rem;
+            background-color: var(--primary);
+            padding: 0 0 0.5rem;
+            .title {
+                width: 100%;
+                padding: 0.3rem 0;
+                text-align: center;
+                font-weight: 700;
+                color: white;
+                font-size: 1.3rem;
+                background-color: var(--second);
+            }
+
+            .hide {
+                visibility: hidden;
+            }
+
+            .show {
+                visibility: visible;
+            }
+
+            .show_mess {
+                width: 100%;
+                // background-color: white;
+                height: 100vh;
+                max-height: 30rem;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                visibility: visible;
+            }
+
+            .chat-sended-adminMedCare {
+                display: flex;
+                justify-content: right;
+                margin: 1rem 0;
+                padding-right: 0.5rem;
+                div {
+                    width: fit-content;
+                    text-align: right;
+                    min-width: 10rem;
+                    background: rgb(61, 160, 221);
+                    color: white;
+                    padding: 0 0.5rem;
+                    border-radius: 0.5rem;
+                    max-width: 70%;
+                    box-shadow: 0 0 0.5rem var(--shadow);
+                    padding: 0.5rem;
+                    li:nth-child(1) {
+                        font-weight: 700;
+                        font-size: 1rem;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+
+            .chat-sended-user {
+                display: flex;
+                justify-content: left;
+                margin: 1rem 0;
+                padding-left: 0.5rem;
+                div {
+                    width: fit-content;
+                    min-width: 10rem;
+                    background: var(--gray);
+                    color: white;
+                    overflow: hidden;
+                    border-radius: 0.5rem;
+                    max-width: 70%;
+                    box-shadow: 0 0 0.5rem var(--shadow);
+
+                    li:nth-child(1) {
+                        padding: 0.2rem 0.5rem;
+                        width: 100%;
+                        font-weight: 700;
+                        font-size: 1rem;
+                        margin-bottom: 0.5rem;
+
+                        color: white;
+                    }
+                    li:nth-child(2) {
+                        padding: 0.2rem 0.5rem;
+                    }
+                }
+            }
+
+            .box_input {
+                width: 100%;
+                div {
+                    width: 98%;
+                    height: 2rem;
+                    margin: 0 1%;
+                    border: none;
+                    outline: none;
+                    font-size: 1.1rem;
+                    padding: 0.3rem;
+                    background-color: white;
+                    outline: 0.1rem solid var(--second);
+                    border-radius: 0.5rem;
+                    box-shadow: 0 0 0.5rem var(--shadow);
+                }
+            }
+        }
+    }
+}

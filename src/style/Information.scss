@@ -1,0 +1,313 @@
+.sec1_information {
+    padding-top: 9rem;
+    background-color: var(--primary);
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.sec1_information_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+
+    .back_link {
+        display: flex;
+        align-items: first baseline;
+
+        .link {
+            text-decoration: none;
+            font-weight: 700;
+            color: black;
+        }
+        i {
+            font-size: 0.8rem;
+            margin: 0 0.5rem;
+        }
+        p {
+            background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+            font-weight: 700;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.sec2_information {
+    background-color: var(--primary);
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.sec2_information_container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 2%;
+    // background-color: aqua;
+    display: flex;
+
+    .left {
+        width: 25%;
+        // min-width: 20rem;
+        div {
+            display: flex;
+            margin-bottom: 1rem;
+            padding: 0 1rem;
+            align-items: center;
+            .link {
+                text-decoration: none;
+                width: 100%;
+                color: black;
+            }
+            p {
+                width: 100%;
+                font-weight: 700;
+                padding: 0.7rem 1rem;
+
+                border-radius: 0.5rem;
+                cursor: pointer;
+
+                i {
+                    font-size: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+            .choice {
+                border-left: 0.3rem solid var(--second);
+                background-color: white;
+                transition: 0.2s;
+                color: var(--second);
+            }
+            p:hover {
+                background-color: rgba(255, 255, 255, 0.512);
+            }
+            p:hover i {
+                animation: 0.4s sake ease-in-out;
+            }
+            @keyframes sake {
+                0% {
+                    transform: rotate(-10deg);
+                }
+                25% {
+                    transform: rotate(10deg);
+                }
+                50% {
+                    transform: rotate(-10deg);
+                }
+                75% {
+                    transform: rotate(10deg);
+                }
+                100% {
+                    transform: rotate(-10deg);
+                }
+            }
+        }
+        .divchoice {
+            border-right: 0.1rem solid var(--second);
+            transition: 0.3s;
+        }
+        .div1 {
+            p {
+                background-image: linear-gradient(to right, var(--second), var(--second_nhat));
+                color: white;
+            }
+        }
+        div:nth-child(7) {
+            width: 100%;
+            .logout {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                p {
+                    background-color: rgb(255, 0, 0) !important;
+                    color: white;
+                    border-left: 0.3rem solid white;
+                }
+            }
+        }
+    }
+
+    .right {
+        width: 75%;
+        padding: 0 0 1rem 2rem;
+        .sec1 {
+            .title {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+        }
+        .sec2 {
+            .title {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+        }
+        .sec3 {
+            .title {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+        }
+        .sec4 {
+            .title {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+            .box_choice {
+                margin: 1rem 0 0 0;
+
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                button {
+                    padding: 0.5rem 2rem;
+                    background-color: white;
+                    border: 0.1rem solid var(--second);
+                    color: var(--second);
+                    font-weight: 700;
+                    border-radius: 0.5rem;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    margin: 0.5rem 0;
+                }
+                button:hover {
+                    scale: 0.95;
+                }
+                .button_active {
+                    background-color: var(--second);
+                    color: white;
+                }
+                .button_active:hover {
+                    scale: 1 !important;
+                }
+            }
+        }
+        .sec5 {
+            .title {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+            .box_choice {
+                margin: 1rem 0 0 0;
+
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                button {
+                    padding: 0.5rem 2rem;
+                    background-color: white;
+                    border: 0.1rem solid var(--second);
+                    color: var(--second);
+                    font-weight: 700;
+                    border-radius: 0.5rem;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    margin: 0.5rem 0;
+                }
+                button:hover {
+                    scale: 0.95;
+                }
+                .button_active {
+                    background-color: var(--second);
+                    color: white;
+                }
+                .button_active:hover {
+                    scale: 1 !important;
+                }
+            }
+        }
+        .sec6 {
+            .title {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+            .box_btn {
+                width: 100%;
+                display: flex;
+                justify-content: right;
+                p {
+                    font-size: 1rem;
+                    margin-left: 1rem;
+                    padding: 0.5rem 1rem;
+                    background-color: var(--gray);
+                    border-radius: 0.5rem;
+                    color: var(--second);
+                    background-color: white;
+                    border: 0.1rem solid var(--second_nhat);
+                    cursor: pointer;
+                    i {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------------RESPONSIVE--------------------------*/
+@media screen and (max-width: 1023px) {
+    .sec1_information {
+        padding: 6rem 1rem 1rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .sec2_information_container {
+        display: flex;
+        flex-direction: column;
+        .left {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 2rem;
+            div:nth-child(1),
+            div:nth-child(2),
+            div:nth-child(3),
+            div:nth-child(4),
+            div:nth-child(5),
+            div:nth-child(6) {
+                padding-left: 0;
+                padding-right: 0;
+                margin: 0.5rem;
+                background-color: white;
+                border-radius: 0.5rem;
+                p {
+                    height: 100%;
+                }
+            }
+            .divchoice {
+                border-right: none;
+                transition: 0.3s;
+            }
+            .div1 {
+                p {
+                    background-image: none;
+                    color: black;
+                }
+            }
+            div:nth-child(7) {
+                width: 100%;
+                background-color: none !important;
+                background-image: none !important;
+                .logout {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    background-color: none !important;
+                    background-image: none !important;
+                    p {
+                        background-color: rgb(255, 0, 0) !important;
+                        color: white;
+                        border-left: 0.3rem solid white;
+                    }
+                }
+            }
+        }
+        .right {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100%;
+        }
+    }
+}
